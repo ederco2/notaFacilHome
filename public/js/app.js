@@ -10,6 +10,15 @@ angular
             .when("/home", {
                 templateUrl: "partials/home.html",
             })
+            .when("/bairro", {
+                templateUrl: "partials/bairro.html",
+            })
+            .when("/bairro/:id", {
+                templateUrl: "partials/bairro-form.html",
+            })
+            .when("/bairro/new", {
+                templateUrl: "partials/bairrro-form.html",
+            })
             .when("/cidade", {
                 templateUrl: "partials/cidade.html",
             })

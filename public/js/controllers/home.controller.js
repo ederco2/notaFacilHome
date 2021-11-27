@@ -11,12 +11,15 @@
 
         vm.cidadesPage = cidadesPage;
         vm.estadosPage = estadosPage;
+        vm.bairrosPage = bairrosPage;
 
         activate();
 
         function activate() {
         }
-
+        function bairrosPage() {
+            $location.path("/bairro");
+        }
         function cidadesPage() {
             $location.path("/cidade");
         }
