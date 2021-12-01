@@ -10,6 +10,15 @@ angular
             .when("/home", {
                 templateUrl: "partials/home.html",
             })
+            .when("/rua", {
+                templateUrl: "partials/rua.html",
+            })
+            .when("/rua/:id", {
+                templateUrl: "partials/rua-form.html",
+            })
+            .when("/rua/new", {
+                templateUrl: "partials/rua-form.html",
+            })
             .when("/bairro", {
                 templateUrl: "partials/bairro.html",
             })
@@ -37,6 +46,15 @@ angular
             .when("/estado/new", {
                 templateUrl: "partials/estado-form.html",
             })
+            .when("/pais", {
+                templateUrl: "partials/pais.html",
+            })
+            .when("/pais/:id", {
+                templateUrl: "partials/pais-form.html",
+            })
+            .when("/pais/new", {
+                templateUrl: "partials/pais-form.html",
+            })            
             .otherwise({
                 templateUrl: "partials/404.html",
             });

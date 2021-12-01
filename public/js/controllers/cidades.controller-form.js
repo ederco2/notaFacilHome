@@ -18,7 +18,7 @@
         $routeParams
     ) {
         var vm = this;
-        vm.c     = {};
+        vm.cidade = {};
         vm.titulo = "Nova Cidade";
         vm.item = null;
         vm.salvar = salvar;

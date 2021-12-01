@@ -9,13 +9,18 @@
         var vm = this;
         var itemSelecionado = -1;
 
-        vm.cidadesPage = cidadesPage;
-        vm.estadosPage = estadosPage;
+        vm.ruasPage    = ruasPage;
         vm.bairrosPage = bairrosPage;
+        vm.cidadesPage = cidadesPage;
+        vm.estadosPage = estadosPage;        
+        vm.paisPage    = paisPage;
 
         activate();
 
         function activate() {
+        }
+        function ruasPage() {
+            $location.path("/rua");
         }
         function bairrosPage() {
             $location.path("/bairro");
@@ -25,6 +30,9 @@
         }
         function estadosPage() {
             $location.path("/estado");
+        }
+        function paisPage() {
+            $location.path("/pais");
         }
     }
 })();
