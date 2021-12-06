@@ -3,11 +3,11 @@
 
     angular
         .module("MyApp")
-        .controller("AtividadeListController", AtividadeListController);
+        .controller("RespListController", RespListController);
 
-        AtividadeListController.$inject = ["AtividadeService"];
+        RespListController.$inject = ["ResponsavelService"];
 
-    function AtividadeListController(AtividadeService) {
+    function RespListController(ResponsavelService) {
         var vm = this;
         vm.item = null;
         vm.itens = [];
@@ -19,13 +19,13 @@
 
         function activate() {
             var query = vm.busca ? { $text: { $search: vm.busca } } : {};
-            AtividadeService.find(query).then(function(result) {
+            ResponsavelService.find(query).then(function(result) {
                 vm.itens = result.data;
             });
         }
 
         function remover(item) {
-            AtividadeService.remove(item.id).success(function() {
+            ResponsavelService.remove(item.id).success(function() {
                 activate();
             });
         }

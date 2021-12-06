@@ -9,15 +9,27 @@
         var vm = this;
         var itemSelecionado = -1;
 
-        vm.ruasPage    = ruasPage;
-        vm.bairrosPage = bairrosPage;
-        vm.cidadesPage = cidadesPage;
-        vm.estadosPage = estadosPage;        
-        vm.paisPage    = paisPage;
+        vm.atividadePage    = atividadePage;
+        vm.empresasPage    = empresasPage;
+        vm.responsavelPage    = responsavelPage;
+        vm.ruasPage           = ruasPage;
+        vm.bairrosPage        = bairrosPage;
+        vm.cidadesPage        = cidadesPage;
+        vm.estadosPage        = estadosPage;        
+        vm.paisPage           = paisPage;
 
         activate();
 
         function activate() {
+        }
+        function atividadePage() {
+            $location.path("/atividade");
+        }        
+        function empresasPage() {
+            $location.path("/empresa");
+        }
+        function responsavelPage() {
+            $location.path("/responsavel");
         }
         function ruasPage() {
             $location.path("/rua");

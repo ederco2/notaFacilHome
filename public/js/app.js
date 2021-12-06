@@ -10,6 +10,33 @@ angular
             .when("/home", {
                 templateUrl: "partials/home.html",
             })
+            .when("/atividade", {
+                templateUrl: "partials/atividade.html",
+            })
+            .when("/atividade/:id", {
+                templateUrl: "partials/atividade-form.html",
+            })
+            .when("/atividade/new", {
+                templateUrl: "partials/atividade-form.html",
+            })            
+            .when("/empresa", {
+                templateUrl: "partials/empresa.html",
+            })
+            .when("/empresa/:id", {
+                templateUrl: "partials/empresa-form.html",
+            })
+            .when("/empresa/new", {
+                templateUrl: "partials/empresa-form.html",
+            })
+            .when("/responsavel", {
+                templateUrl: "partials/responsavel.html",
+            })
+            .when("/responsavel/:id", {
+                templateUrl: "partials/responsavel-form.html",
+            })
+            .when("/responsavel/new", {
+                templateUrl: "partials/responsavel-form.html",
+            })
             .when("/rua", {
                 templateUrl: "partials/rua.html",
             })
