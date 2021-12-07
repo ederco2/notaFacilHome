@@ -9,8 +9,9 @@
         var vm = this;
         var itemSelecionado = -1;
 
-        vm.atividadePage    = atividadePage;
-        vm.empresasPage    = empresasPage;
+        vm.contribuintePage   = contribuintePage;
+        vm.atividadePage      = atividadePage;
+        vm.empresasPage       = empresasPage;
         vm.responsavelPage    = responsavelPage;
         vm.ruasPage           = ruasPage;
         vm.bairrosPage        = bairrosPage;
@@ -22,6 +23,10 @@
 
         function activate() {
         }
+
+        function contribuintePage() {
+            $location.path("/contribuinte");
+        }         
         function atividadePage() {
             $location.path("/atividade");
         }        

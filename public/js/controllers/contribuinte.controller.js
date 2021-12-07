@@ -3,11 +3,11 @@
 
     angular
         .module("MyApp")
-        .controller("BairroListController", BairroListController);
+        .controller("ContrListController", ContrListController);
 
-        BairroListController.$inject = ["BairroService"];
+        ContrListController.$inject = ["ContribuinteService"];
 
-    function BairroListController(BairroService) {
+    function ContrListController(ContribuinteService) {
         var vm = this;
         vm.item = null;
         vm.itens = [];
@@ -19,13 +19,13 @@
 
         function activate() {
             var query = vm.busca ? { $text: { $search: vm.busca } } : {};
-            BairroService.find(query).then(function(result) {
+            ContribuinteService.find(query).then(function(result) {
                 vm.itens = result.data;
             });
         }
 
         function remover(item) {
-            BairroService.remove(item.id).success(function() {
+            ContribuinteService.remove(item.id).success(function() {
                 activate();
             });
         }

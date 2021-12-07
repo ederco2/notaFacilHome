@@ -3,11 +3,11 @@
 
     angular
         .module('MyApp')
-        .factory('ResponsavelService', ResponsavelService);
+        .factory('ContribuinteService', ContribuinteService);
 
-        ResponsavelService.$inject = ['$http', '$window', '$rootScope'];
+        ContribuinteService.$inject = ['$http', '$window', '$rootScope'];
 
-    function ResponsavelService($http, $window, $rootScope) {
+    function ContribuinteService($http, $window, $rootScope) {
         var service = {
             find: find,
             findById: findById,
@@ -15,7 +15,7 @@
             remove: remove
         };
 
-        var URL = 'http://localhost:8080/api/responsaveis';
+        var URL = 'http://localhost:8080/api/contribuintes';
 
         return service;
        
