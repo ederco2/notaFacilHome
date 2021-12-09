@@ -8,7 +8,8 @@
     function HomeController($rootScope, $location, $window) {
         var vm = this;
         var itemSelecionado = -1;
-
+        
+        vm.emissaoPage        = emissaoPage;
         vm.contribuintePage   = contribuintePage;
         vm.atividadePage      = atividadePage;
         vm.empresasPage       = empresasPage;
@@ -23,7 +24,9 @@
 
         function activate() {
         }
-
+        function emissaoPage() {
+            $location.path("/emissao");
+        }  
         function contribuintePage() {
             $location.path("/contribuinte");
         }         

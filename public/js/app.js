@@ -10,6 +10,15 @@ angular
             .when("/home", {
                 templateUrl: "partials/home.html",
             })
+            .when("/emissao", {
+                templateUrl: "partials/emissao.html",
+            })
+            .when("/emissao/:id", {
+                templateUrl: "partials/emissao-form.html",
+            })
+            .when("/emissao/new", {
+                templateUrl: "partials/emissao-form.html",
+            }) 
             .when("/contribuinte", {
                 templateUrl: "partials/contribuinte.html",
             })
