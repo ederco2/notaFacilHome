@@ -5,7 +5,7 @@
         .module('MyApp')
         .factory('ResponsavelService', ResponsavelService);
 
-        ResponsavelService.$inject = ['$http', '$window', '$rootScope'];
+    ResponsavelService.$inject = ['$http', '$window', '$rootScope'];
 
     function ResponsavelService($http, $window, $rootScope) {
         var service = {
