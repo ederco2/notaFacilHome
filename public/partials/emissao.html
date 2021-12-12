@@ -40,8 +40,8 @@
                                     <td>{{item.contribuinte.nome}}</td>                                    
                                     <td>{{item.empresa.nomeEmpresa}}</td>                                    
                                     <td>{{item.qtdServico}}</td>   
-                                    <td>{{item.valorServico}}</td>                                        
-                                    <td>{{item.listaServico.descricao}}</td>    
+                                    <td>{{item.valorServico | currency}}</td>                                        
+                                    <td>{{item.listaServico.descricao | limitTo:80}}</td>    
                                     <td>
                                         <a type="button" class="btn btn-primary btn-sm" ng-href="{{'/emissao/' + item.id}}">
                                             <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
